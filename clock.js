@@ -28,8 +28,8 @@ $.fn.clock = function (options)
 		secondHandColor: 'red'
 	}, options);
 
-	$(this).html("<canvas id='can'></canvas>");
-	var canvas = $('#can').get(0);
+	$(this).html("<canvas></canvas>");
+	var canvas = $(this).children().get(0);
 	var ctx = canvas.getContext("2d");
 	ctx.canvas.width = settings.faceSize;
 	ctx.canvas.height = settings.faceSize;
